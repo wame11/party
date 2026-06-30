@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Party Survival Kit</title>
+    <meta
+      name="description"
+      content="A PSHEE-style party safety website for teenagers, with practical advice on friends, drinks, consent, pressure, and emergencies."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="spark-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Party Survival Kit home">
+        <span class="brand-mark">PS</span>
+        <span>Party Survival Kit</span>
+      </a>
+      <nav aria-label="Main sections">
+        <a href="#plan">Plan</a>
+        <a href="#during">During</a>
+        <a href="#help">Help</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <img
+          class="hero-image"
+          src="party-safety-hero.svg"
+          alt="Teenagers at a party while one friend checks that another friend is okay"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="kicker">PSHEE party safety guide</p>
+          <h1 id="page-title">Have a good night, and get home with your friends.</h1>
+          <p class="hero-copy">
+            A party can be brilliant, but it is still worth having a plan. This guide is
+            for staying confident, spotting danger early, and looking after people without
+            turning the whole night into a lecture.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#plan">
+              <span class="button-icon" aria-hidden="true">01</span>
+              Build the plan
+            </a>
+            <a class="button ghost" href="#help">
+              <span class="button-icon" aria-hidden="true">!</span>
+              Emergency checks
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="plan" class="section two-column">
+        <div class="section-copy reveal">
+          <p class="kicker">Before you go</p>
+          <h2>Make a plan while your brain is still calm.</h2>
+          <p>
+            This is not overthinking. It is just making sure one awkward moment does not
+            become a serious problem. A good plan should be short enough to remember and
+            clear enough to use.
+          </p>
+        </div>
+
+        <div class="check-panel reveal" aria-labelledby="check-title">
+          <div class="panel-topline">
+            <h3 id="check-title">My party plan</h3>
+            <span id="plan-score">0/5 ready</span>
+          </div>
+          <div class="progress-shell" aria-hidden="true">
+            <div id="plan-progress" class="progress-fill"></div>
+          </div>
+          <label>
+            <input type="checkbox" />
+            I know the full address and how to describe where I am.
+          </label>
+          <label>
+            <input type="checkbox" />
+            My phone is charged and I have enough data or credit.
+          </label>
+          <label>
+            <input type="checkbox" />
+            I know how I am getting home before the party starts.
+          </label>
+          <label>
+            <input type="checkbox" />
+            I have chosen a trusted friend to check in with.
+          </label>
+          <label>
+            <input type="checkbox" />
+            I have a code phrase for "I want to leave now".
+          </label>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="survival-title">
+        <div class="section-heading reveal">
+          <p class="kicker">Survival rules</p>
+          <h2 id="survival-title">The main moves that actually help.</h2>
+        </div>
+
+        <div class="survival-grid">
+          <article class="rule-card reveal tilt-card">
+            <span class="rule-number">01</span>
+            <h3>Arrive with standards.</h3>
+            <p>
+              If the party feels unsafe as soon as you arrive, you do not have to stay.
+              Leaving early is more mature than pretending everything is fine.
+            </p>
+          </article>
+
+          <article class="rule-card reveal tilt-card">
+            <span class="rule-number">02</span>
+            <h3>Keep drinks simple.</h3>
+            <p>
+              Keep your drink with you, do not accept a drink you did not see being made,
+              and do not feel rude for saying no. Spiking can happen to soft drinks too.
+            </p>
+          </article>
+
+          <article class="rule-card reveal tilt-card">
+            <span class="rule-number">03</span>
+            <h3>Stay with the friend group.</h3>
+            <p>
+              Agree that nobody disappears without telling someone. If a friend looks
+              unwell, confused, panicked, or suddenly different, take it seriously.
+            </p>
+          </article>
+
+          <article class="rule-card reveal tilt-card">
+            <span class="rule-number">04</span>
+            <h3>Have a clean exit.</h3>
+            <p>
+              The best excuse is the one you can actually use. "I need to go now" is
+              enough. You do not owe a dramatic explanation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="during" class="section split-band" aria-labelledby="during-title">
+        <div class="split-copy reveal">
+          <p class="kicker">Pressure, consent, and boundaries</p>
+          <h2 id="during-title">Being confident does not mean going along with everything.</h2>
+          <p>
+            Peer pressure can make bad decisions look normal. A real friend should not
+            need you to drink, take something, kiss someone, send a photo, or stay longer
+            than you want to. Consent has to be clear, freely given, and changeable.
+          </p>
+        </div>
+      </section>
+
+      <section id="help" class="section emergency-section" aria-labelledby="help-title">
+        <div class="section-heading reveal">
+          <p class="kicker">If things go wrong</p>
+          <h2 id="help-title">Do not wait for the situation to become obvious.</h2>
+        </div>
+
+        <div class="emergency-grid">
+          <article class="alert-panel reveal">
+            <div class="signal" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <h3>Call 999 now if someone:</h3>
+            <ul>
+              <li>is unconscious, very confused, or cannot be woken properly</li>
+              <li>has slow, irregular, or noisy breathing</li>
+              <li>has a seizure or keeps being sick</li>
+              <li>has pale, cold, clammy, or blue-tinged skin</li>
+            </ul>
+            <p>
+              In the UK, call <strong>999</strong>. If you are outside the UK, use the
+              local emergency number.
+            </p>
+          </article>
+
+          <article class="alert-panel reveal">
+            <div class="signal safe" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <h3>While you wait for help:</h3>
+            <ul>
+              <li>stay with the person and keep them away from more drink or substances</li>
+              <li>tell an adult, host, venue staff, or security immediately</li>
+              <li>do not make them walk around or sleep it off</li>
+              <li>say exactly what they may have drunk or taken, even if it feels awkward</li>
+            </ul>
+            <p>
+              Getting medical help is more important than worrying about trouble. The
+              honest details help emergency services act faster.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sources" class="section sources-section" aria-labelledby="sources-title">
+        <div class="section-heading reveal">
+          <p class="kicker">Reliable information used</p>
+          <h2 id="sources-title">Sources checked while making this site.</h2>
+        </div>
+        <div class="source-grid">
+          <a class="source-card reveal" href="https://www.nhs.uk/conditions/alcohol-poisoning/" target="_blank" rel="noreferrer">
+            <span>NHS</span>
+            Alcohol poisoning signs and emergency advice
+          </a>
+          <a class="source-card reveal" href="https://www.talktofrank.com/news/spiking" target="_blank" rel="noreferrer">
+            <span>Talk to FRANK</span>
+            Drink spiking and drug safety advice
+          </a>
+          <a class="source-card reveal" href="https://www.childline.org.uk/info-advice/friends-relationships-sex/friends/peer-pressure/" target="_blank" rel="noreferrer">
+            <span>Childline</span>
+            Peer pressure and how to respond
+          </a>
+          <a class="source-card reveal" href="https://www.gov.uk/penalties-drug-possession-dealing" target="_blank" rel="noreferrer">
+            <span>GOV.UK</span>
+            Penalties for drug possession and supply
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
