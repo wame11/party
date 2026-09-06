@@ -55,6 +55,9 @@ This also writes the `CNAME` file GitHub Pages needs.
 
 The `.nojekyll` file stops GitHub running Jekyll on the files.
 
+All links in the pages are relative, so the site works both at `https://wame11.github.io/party/`
+(before the custom domain is connected) and at the root of your own domain.
+
 ## Connect the domain in Cloudflare
 
 DNS records to add in the Cloudflare dashboard (**DNS → Records**), or via the API below.
