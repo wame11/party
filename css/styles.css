@@ -629,6 +629,10 @@ a.card:hover h3 { color: var(--accent-strong); }
 .gallery figcaption strong { display: block; color: var(--ink); font-size: 1.05rem; }
 @media (max-width: 860px) { .gallery { grid-template-columns: 1fr; } }
 
+.gallery--four { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 860px) { .gallery--four { grid-template-columns: 1fr 1fr; } }
+.gallery--four { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 860px) { .gallery--four { grid-template-columns: 1fr 1fr; } }
 .gallery--feature { grid-template-columns: 2fr 1fr; }
 .gallery--feature figure:first-child { grid-row: span 2; }
 .gallery--feature figure:first-child img { aspect-ratio: auto; height: 100%; }
@@ -889,6 +893,51 @@ a.card:hover h3 { color: var(--accent-strong); }
 .footer-bottom { margin: 0; color: var(--muted); font-size: 0.85rem; }
 .footer-bottom a { color: var(--muted); font-weight: 500; }
 
+/* Community news */
+.news {
+  display: grid;
+  grid-template-columns: minmax(200px, 240px) 1fr;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: start;
+}
+.news__video { margin: 0; }
+.news__video video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  display: block;
+  border-radius: 18px;
+  background: #000;
+  border: 1px solid var(--line);
+}
+.news__video figcaption {
+  margin-top: 0.6rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.news__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+.news__list li {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.1rem 1.3rem;
+}
+.news__list li:first-child { background: var(--accent-soft); border-color: transparent; }
+.news__list h3 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+.news__list p { margin: 0; color: var(--ink-soft); }
+.news__list .eyebrow { margin-bottom: 0.3rem; }
+@media (max-width: 760px) {
+  .news { grid-template-columns: 1fr; }
+  .news__video { max-width: 220px; margin-inline: auto; }
+}
+
 /* ---------- Phone compaction ---------- */
 @media (max-width: 600px) {
   .hero { padding: 1.75rem 0 1.5rem; }
@@ -896,6 +945,9 @@ a.card:hover h3 { color: var(--accent-strong); }
   .lead { font-size: 1.15rem; }
   .section { padding: 1.5rem 0; }
   .card-grid { grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+  .emergency-number { font-size: 1.6rem; }
+  .news { gap: 1rem; }
+  .news__list { gap: 0.6rem; }
   .card-grid--wide { grid-template-columns: 1fr; }
   .card { padding: 1rem; border-radius: 14px; gap: 0.35rem; }
   .card__icon { display: none; }
@@ -906,6 +958,7 @@ a.card:hover h3 { color: var(--accent-strong); }
   .contact-item { padding: 0.9rem 1rem; }
   .gallery { gap: 0.7rem; }
   .gallery figure img { aspect-ratio: 16 / 9; }
+  .news__list li { padding: 0.9rem 1rem; }
   .gallery figcaption { padding: 0.5rem 0.9rem; }
   .facts li { padding: 0.65rem 0.9rem; }
   .footer-links { display: none; }
