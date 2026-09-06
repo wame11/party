@@ -1,232 +1,304 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Party Survival Kit</title>
-    <meta
-      name="description"
-      content="A PSHEE-style party safety website for teenagers, with practical advice on friends, drinks, consent, pressure, and emergencies."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <canvas id="spark-canvas" aria-hidden="true"></canvas>
+<!DOCTYPE html>
+<html lang="en-GB" data-palette="stone" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hadley Wood Jewish Community | Hadley Wood Shul &amp; Synagogue, Barnet</title>
+<meta name="description" content="Hadley Wood Jewish Community (Hadley Wood Shul) is a warm, modern United Synagogue community in Hadley Wood, Barnet, North London. Services, Cheder, hall hire, events and more.">
+<meta name="keywords" content="Hadley Wood Shul, Hadley Wood Jewish Community, Hadley Wood Synagogue, HWJC, synagogue Barnet, shul Barnet, United Synagogue Hadley Wood, Jewish community North London, cheder Hadley Wood, hall hire Hadley Wood, Rabbi Toby Weiniger, Rebbetzen Bracha Weiniger">
+<link rel="canonical" href="https://YOUR-DOMAIN/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hadley Wood Jewish Community">
+<meta property="og:title" content="Hadley Wood Jewish Community | Hadley Wood Shul &amp; Synagogue, Barnet">
+<meta property="og:description" content="Hadley Wood Jewish Community (Hadley Wood Shul) is a warm, modern United Synagogue community in Hadley Wood, Barnet, North London. Services, Cheder, hall hire, events and more.">
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+<meta property="og:image" content="https://YOUR-DOMAIN/assets/img/og-image.jpg">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hadley Wood Jewish Community | Hadley Wood Shul &amp; Synagogue, Barnet">
+<meta name="twitter:description" content="Hadley Wood Jewish Community (Hadley Wood Shul) is a warm, modern United Synagogue community in Hadley Wood, Barnet, North London. Services, Cheder, hall hire, events and more.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/img/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="/css/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": ["Synagogue", "Organization"], "name": "Hadley Wood Jewish Community", "alternateName": ["Hadley Wood Shul", "Hadley Wood Synagogue", "HWJC"], "url": "https://YOUR-DOMAIN/", "logo": "https://YOUR-DOMAIN/assets/img/hwjc-logo.png", "image": "https://YOUR-DOMAIN/assets/img/og-image.jpg", "telephone": "+44 20 8143 2580", "email": "office@hwjc.org.uk", "address": {"@type": "PostalAddress", "streetAddress": "8 Lancaster Avenue", "addressLocality": "Hadley Wood, Barnet", "addressRegion": "Hertfordshire", "postalCode": "EN4 0EX", "addressCountry": "GB"}, "areaServed": ["Hadley Wood", "Barnet", "Cockfosters", "Enfield", "North London"], "parentOrganization": {"@type": "Organization", "name": "United Synagogue", "url": "https://www.theus.org.uk/"}, "sameAs": ["https://www.instagram.com/hadleywoodshul", "https://www.facebook.com/hadleywoodjewishcommunity/"]}</script>
 
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Party Survival Kit home">
-        <span class="brand-mark">PS</span>
-        <span>Party Survival Kit</span>
-      </a>
-      <nav aria-label="Main sections">
-        <a href="#plan">Plan</a>
-        <a href="#during">During</a>
-        <a href="#help">Help</a>
-        <a href="#sources">Sources</a>
-      </nav>
-    </header>
+<script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Hadley Wood Jewish Community home">
+      <img src="/assets/img/hwjc-tree.png" alt="" width="48" height="49">
+      <span><span class="brand__name">Hadley Wood Jewish Community</span><span class="brand__sub">Hadley Wood Shul &middot; United Synagogue</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="nav-toggle__label">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <ul>
+<li><a href="/" aria-current="page">Welcome</a></li>
+<li><a href="/rabbi.html">Rabbi &amp; Rebbetzen</a></li>
+<li><a href="/cheder.html">Cheder</a></li>
+<li><a href="/hall-hire.html">Hall Hire</a></li>
+<li>
+  <button class="nav-btn" type="button" aria-expanded="false" aria-controls="community-menu">Community <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  <div class="submenu" id="community-menu">
+    <a href="/community.html">Community overview</a>
+    <a href="/community.html#events">Events</a><a href="/community.html#kiddush">Book a Kiddush</a><a href="/community.html#haftorah">Read my Haftorah</a><a href="/community.html#bar-bat-mitzvah">Bar &amp; Bat Mitzvah</a><a href="/community.html#hatzola">Hatzola HBS</a>
+  </div>
+</li>
+<li class="nav-cta"><a href="/#visit">Visit us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
 
-    <main id="top">
-      <section class="hero" aria-labelledby="page-title">
-        <img
-          class="hero-image"
-          src="party-safety-hero.svg"
-          alt="Teenagers at a party while one friend checks that another friend is okay"
-        />
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content reveal">
-          <p class="kicker">PSHEE party safety guide</p>
-          <h1 id="page-title">Have a good night, and get home with your friends.</h1>
-          <p class="hero-copy">
-            A party can be brilliant, but it is still worth having a plan. This guide is
-            for staying confident, spotting danger early, and looking after people without
-            turning the whole night into a lecture.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#plan">
-              <span class="button-icon" aria-hidden="true">01</span>
-              Build the plan
-            </a>
-            <a class="button ghost" href="#help">
-              <span class="button-icon" aria-hidden="true">!</span>
-              Emergency checks
-            </a>
-          </div>
+<section class="hero" aria-labelledby="welcome-title">
+  <div class="container hero__grid">
+    <div>
+      <span class="eyebrow reveal">Hadley Wood Shul &middot; Barnet, North London</span>
+      <h1 id="welcome-title" class="reveal" data-delay="1">Welcome to Hadley Wood Jewish Community</h1>
+      <p class="lead reveal" data-delay="2">A warm, modern and friendly synagogue in Hadley Wood, on the edge of Barnet. We are a small United Synagogue community with a purpose-built shul, a thriving Cheder and a famously good Kiddush. Whoever you are, and wherever you are on your Jewish journey, you are welcome here.</p>
+      <div class="btn-row reveal" data-delay="3">
+        <a class="btn btn--primary" href="#visit">Plan a visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <a class="btn btn--outline" href="/rabbi.html">Meet our Rabbi &amp; Rebbetzen</a>
+      </div>
+    </div>
+    <div class="hero__logo reveal" data-delay="2">
+      <img src="/assets/img/hwjc-logo.png" alt="Hadley Wood Jewish Community logo: a tree with green leaves and red pomegranates" width="700" height="665" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="about-title">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">About our shul</span>
+      <h2 id="about-title">North London&rsquo;s best-kept secret</h2>
+      <p>Hadley Wood Jewish Community, known locally as Hadley Wood Shul, is an intimate Orthodox synagogue close to Barnet and Cockfosters. We became an independent member of the <a href="https://www.theus.org.uk/" rel="noopener" target="_blank">United Synagogue</a> in 2012, and in 2018 we completed a full rebuild of our home on Lancaster Avenue, giving us an outstanding, purpose-built, modern synagogue building.</p>
+      <p>What makes us special is the people. With over 250 members we are big enough to have a full programme of services and activities, and small enough that you will be greeted by name. Our community is led by Rabbi Toby and Rebbetzen Bracha Weiniger, who joined us in January 2026.</p>
+      <p>Life at Hadley Wood Synagogue is busy: Shabbat and festival services, film evenings, days out, visiting speakers, shiurim, keep-fit classes, a poetry club, and our much-loved Cheder for children in school years 1 to 6.</p>
+    </div>
+    <div class="reveal" data-delay="1">
+      <div class="card-grid">
+        <div class="card card--accent">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.5a5 5 0 0 1 6 5"/></svg></div>
+          <h3>250+ members</h3>
+          <p>A friendly, engaged community where newcomers quickly become regulars.</p>
         </div>
-      </section>
-
-      <section id="plan" class="section two-column">
-        <div class="section-copy reveal">
-          <p class="kicker">Before you go</p>
-          <h2>Make a plan while your brain is still calm.</h2>
-          <p>
-            This is not overthinking. It is just making sure one awkward moment does not
-            become a serious problem. A good plan should be short enough to remember and
-            clear enough to use.
-          </p>
+        <div class="card card--accent">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+          <h3>Purpose-built shul</h3>
+          <p>Fully rebuilt in 2018 with modern, accessible facilities and a garden marquee.</p>
         </div>
-
-        <div class="check-panel reveal" aria-labelledby="check-title">
-          <div class="panel-topline">
-            <h3 id="check-title">My party plan</h3>
-            <span id="plan-score">0/5 ready</span>
-          </div>
-          <div class="progress-shell" aria-hidden="true">
-            <div id="plan-progress" class="progress-fill"></div>
-          </div>
-          <label>
-            <input type="checkbox" />
-            I know the full address and how to describe where I am.
-          </label>
-          <label>
-            <input type="checkbox" />
-            My phone is charged and I have enough data or credit.
-          </label>
-          <label>
-            <input type="checkbox" />
-            I know how I am getting home before the party starts.
-          </label>
-          <label>
-            <input type="checkbox" />
-            I have chosen a trusted friend to check in with.
-          </label>
-          <label>
-            <input type="checkbox" />
-            I have a code phrase for "I want to leave now".
-          </label>
+        <div class="card card--accent">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div>
+          <h3>Thriving Cheder</h3>
+          <p>Small classes, warm teachers and a strong focus on Hebrew reading.</p>
         </div>
-      </section>
-
-      <section class="section" aria-labelledby="survival-title">
-        <div class="section-heading reveal">
-          <p class="kicker">Survival rules</p>
-          <h2 id="survival-title">The main moves that actually help.</h2>
+        <div class="card card--accent">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-1 6a3 3 0 0 1-6 0z"/><path d="M12 12v6M8 21h8M12 12a3 3 0 0 0 3-3"/></svg></div>
+          <h3>The famous Kiddush</h3>
+          <p>Our signature dish since day one. Come for the davening, stay for the Kiddush.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="survival-grid">
-          <article class="rule-card reveal tilt-card">
-            <span class="rule-number">01</span>
-            <h3>Arrive with standards.</h3>
-            <p>
-              If the party feels unsafe as soon as you arrive, you do not have to stay.
-              Leaving early is more mature than pretending everything is fine.
-            </p>
-          </article>
+<section class="section section--alt" aria-labelledby="explore-title">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Explore</span>
+      <h2 id="explore-title">Find your way around Hadley Wood Shul</h2>
+      <p class="lead">Everything you need, whether you are a member, a visitor, or thinking about moving to the area.</p>
+    </div>
+    <div class="card-grid reveal-stagger">
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.2.9-4.5 4.3 1.1 6.2L12 17l-5.5 3 1.1-6.2L3.1 9.5l6.2-.9z"/></svg></div>
+        <h3>Rabbi &amp; Rebbetzen</h3>
+        <p>Meet Rabbi Toby and Rebbetzen Bracha Weiniger, our rabbinic couple.</p>
+        <a class="card-link" href="/rabbi.html">Meet them <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div>
+        <h3>Cheder</h3>
+        <p>Jewish learning for children in school years 1 to 6, every Wednesday afternoon.</p>
+        <a class="card-link" href="/cheder.html">About our Cheder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <h3>Hall Hire</h3>
+        <p>A bright modern hall, garden marquee and fully fitted kosher kitchen for your event.</p>
+        <a class="card-link" href="/hall-hire.html">Hire our hall <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h3>Community</h3>
+        <p>Events, sponsoring a Kiddush, reading a Haftorah, Bar and Bat Mitzvah, and Hatzola HBS.</p>
+        <a class="card-link" href="/community.html">Get involved <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
 
-          <article class="rule-card reveal tilt-card">
-            <span class="rule-number">02</span>
-            <h3>Keep drinks simple.</h3>
-            <p>
-              Keep your drink with you, do not accept a drink you did not see being made,
-              and do not feel rude for saying no. Spiking can happen to soft drinks too.
-            </p>
-          </article>
-
-          <article class="rule-card reveal tilt-card">
-            <span class="rule-number">03</span>
-            <h3>Stay with the friend group.</h3>
-            <p>
-              Agree that nobody disappears without telling someone. If a friend looks
-              unwell, confused, panicked, or suddenly different, take it seriously.
-            </p>
-          </article>
-
-          <article class="rule-card reveal tilt-card">
-            <span class="rule-number">04</span>
-            <h3>Have a clean exit.</h3>
-            <p>
-              The best excuse is the one you can actually use. "I need to go now" is
-              enough. You do not owe a dramatic explanation.
-            </p>
-          </article>
+<section class="section" aria-labelledby="living-title">
+  <div class="container split split--reverse">
+    <div class="reveal" data-delay="1">
+      <div class="card-grid">
+        <div class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l1.5-4M15 21l-1.5-4M8.5 14h.01M15.5 14h.01"/></svg></div>
+          <h3>Fast into town</h3>
+          <p>Hadley Wood station runs direct trains to Kings Cross and Moorgate. The Piccadilly line is at Cockfosters and the Northern line at High Barnet.</p>
         </div>
-      </section>
-
-      <section id="during" class="section split-band" aria-labelledby="during-title">
-        <div class="split-copy reveal">
-          <p class="kicker">Pressure, consent, and boundaries</p>
-          <h2 id="during-title">Being confident does not mean going along with everything.</h2>
-          <p>
-            Peer pressure can make bad decisions look normal. A real friend should not
-            need you to drink, take something, kiss someone, send a photo, or stay longer
-            than you want to. Consent has to be clear, freely given, and changeable.
-          </p>
+        <div class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l6 8h-3l4 6h-5v6h-4v-6H5l4-6H6z"/></svg></div>
+          <h3>Green on the doorstep</h3>
+          <p>Trent Country Park, once a hunting ground of Henry VIII, is just up the road with woods, gorges and protected wildlife.</p>
         </div>
-      </section>
-
-      <section id="help" class="section emergency-section" aria-labelledby="help-title">
-        <div class="section-heading reveal">
-          <p class="kicker">If things go wrong</p>
-          <h2 id="help-title">Do not wait for the situation to become obvious.</h2>
+        <div class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div>
+          <h3>Jewish life nearby</h3>
+          <p>Wolfson Hillel primary school (rated Outstanding), a kosher butcher and mikveh facilities are within ten minutes.</p>
         </div>
-
-        <div class="emergency-grid">
-          <article class="alert-panel reveal">
-            <div class="signal" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <h3>Call 999 now if someone:</h3>
-            <ul>
-              <li>is unconscious, very confused, or cannot be woken properly</li>
-              <li>has slow, irregular, or noisy breathing</li>
-              <li>has a seizure or keeps being sick</li>
-              <li>has pale, cold, clammy, or blue-tinged skin</li>
-            </ul>
-            <p>
-              In the UK, call <strong>999</strong>. If you are outside the UK, use the
-              local emergency number.
-            </p>
-          </article>
-
-          <article class="alert-panel reveal">
-            <div class="signal safe" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <h3>While you wait for help:</h3>
-            <ul>
-              <li>stay with the person and keep them away from more drink or substances</li>
-              <li>tell an adult, host, venue staff, or security immediately</li>
-              <li>do not make them walk around or sleep it off</li>
-              <li>say exactly what they may have drunk or taken, even if it feels awkward</li>
-            </ul>
-            <p>
-              Getting medical help is more important than worrying about trouble. The
-              honest details help emergency services act faster.
-            </p>
-          </article>
+        <div class="card">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-1 6a3 3 0 0 1-6 0z"/><path d="M12 12v6M8 21h8M12 12a3 3 0 0 0 3-3"/></svg></div>
+          <h3>Kosher shopping</h3>
+          <p>Borehamwood and Edgware are about fifteen minutes away, with Hendon around twenty.</p>
         </div>
-      </section>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Living in Hadley Wood</span>
+      <h2 id="living-title">The shul you&rsquo;ve never heard of that you&rsquo;ll never want to leave</h2>
+      <p>Hadley Wood is one of North London&rsquo;s most sought-after addresses, set in beautiful countryside yet only eleven miles from the centre of London. It is a wonderful place to raise a family, with space to grow, excellent schools and quick transport links.</p>
+      <p>Heathrow, Luton and Stansted airports are all around forty minutes away by car, traffic permitting.</p>
+      <p>Dreaming of a move? If you would like to hear more about Jewish life in Hadley Wood, we would love to talk.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="mailto:office@hwjc.org.uk?subject=Moving%20to%20Hadley%20Wood">Ask about moving here</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <section id="sources" class="section sources-section" aria-labelledby="sources-title">
-        <div class="section-heading reveal">
-          <p class="kicker">Reliable information used</p>
-          <h2 id="sources-title">Sources checked while making this site.</h2>
-        </div>
-        <div class="source-grid">
-          <a class="source-card reveal" href="https://www.nhs.uk/conditions/alcohol-poisoning/" target="_blank" rel="noreferrer">
-            <span>NHS</span>
-            Alcohol poisoning signs and emergency advice
-          </a>
-          <a class="source-card reveal" href="https://www.talktofrank.com/news/spiking" target="_blank" rel="noreferrer">
-            <span>Talk to FRANK</span>
-            Drink spiking and drug safety advice
-          </a>
-          <a class="source-card reveal" href="https://www.childline.org.uk/info-advice/friends-relationships-sex/friends/peer-pressure/" target="_blank" rel="noreferrer">
-            <span>Childline</span>
-            Peer pressure and how to respond
-          </a>
-          <a class="source-card reveal" href="https://www.gov.uk/penalties-drug-possession-dealing" target="_blank" rel="noreferrer">
-            <span>GOV.UK</span>
-            Penalties for drug possession and supply
-          </a>
-        </div>
-      </section>
-    </main>
+<section class="section section--surface" aria-labelledby="history-title">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Our story</span>
+      <h2 id="history-title">From a living room to a purpose-built synagogue</h2>
+      <p>Hadley Wood Jewish Community began in the late 1980s, meeting on Friday nights in the home of the late Tony Brooks and his wife Bonnie. Services moved to the home of Cheryl and Steve Pack, whose lounge became a shul every Shabbat for seven years, complete with a grand piano and a great Kiddush.</p>
+      <p>The community grew, held its first High Holy Day services in 1998, and in 2002 bought a house on Lancaster Avenue with the support of local residents, interest-free loans and the United Synagogue. Refurbished in 2009 and fully rebuilt in 2018, both in loving memory of the late Marsha Rogers, our building today is as inviting as ever.</p>
+    </div>
+    <ol class="timeline reveal" data-delay="1">
+      <li><strong>1989</strong> First Friday night services held in members&rsquo; homes in Hadley Wood.</li>
+      <li><strong>1998</strong> First High Holy Day services and first Bar Mitzvah; over 300 people now join us for the Yomim Noraim.</li>
+      <li><strong>2002</strong> A permanent home purchased at 8 Lancaster Avenue.</li>
+      <li><strong>2012</strong> Hadley Wood Jewish Community becomes an independent member of the United Synagogue.</li>
+      <li><strong>2018</strong> Full rebuild completed: a modern, purpose-built shul.</li>
+      <li><strong>2026</strong> Rabbi Toby and Rebbetzen Bracha Weiniger join as our rabbinic couple.</li>
+    </ol>
+  </div>
+</section>
 
-    <script src="script.js"></script>
-  </body>
+<section class="section" id="visit" aria-labelledby="visit-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Visit us</span>
+      <h2 id="visit-title">Come and say hello</h2>
+      <p class="lead">To find out more about Hadley Wood Synagogue or to arrange a visit, get in touch with our office. We would be delighted to welcome you.</p>
+    </div>
+    <div class="contact-grid reveal-stagger">
+      <div class="contact-item">
+        <h3>Address</h3>
+        <address><a href="https://www.google.com/maps/search/?api=1&query=8+Lancaster+Avenue+Hadley+Wood+Barnet+EN4+0EX" rel="noopener" target="_blank">8 Lancaster Avenue, Hadley Wood, Barnet, Hertfordshire, EN4 0EX</a></address>
+      </div>
+      <div class="contact-item">
+        <h3>Email</h3>
+        <a href="mailto:office@hwjc.org.uk">office@hwjc.org.uk</a>
+      </div>
+      <div class="contact-item">
+        <h3>Telephone</h3>
+        <a href="tel:+442081432580">020 8143 2580</a>
+        <p class="muted" style="font-size:0.95rem;margin-top:0.4rem">Select the option for the shul office, Rabbi, Membership Secretary, Chairman or United Synagogue Burial Society.</p>
+      </div>
+      <div class="contact-item">
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/hadleywoodshul" rel="noopener" target="_blank">@hadleywoodshul</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>You&rsquo;ll find your place at Hadley Wood Jewish Community</h2>
+        <p>Keen to be part of a vibrant, welcoming United Synagogue community in Barnet? Come for a Shabbat morning and see for yourself.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--light" href="mailto:office@hwjc.org.uk?subject=Visiting%20Hadley%20Wood%20Shul">Email the office</a>
+        <a class="btn btn--primary" href="/community.html">What&rsquo;s on</a>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="sr-only">Hadley Wood Jewish Community (HWJC), also known as Hadley Wood Shul and Hadley Wood Synagogue, is an Orthodox United Synagogue community at 8 Lancaster Avenue, Hadley Wood, Barnet, EN4 0EX, serving Hadley Wood, Barnet, Cockfosters, Enfield and North London.</p>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="/assets/img/hwjc-logo.png" alt="Hadley Wood Jewish Community logo" width="150" height="143">
+        <p>Hadley Wood Jewish Community is a warm, modern Orthodox shul in Hadley Wood, Barnet, North London, and an independent member of the United Synagogue.</p>
+        <p class="footer-keywords">Also known as Hadley Wood Shul and Hadley Wood Synagogue.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="/">Welcome</a></li>
+          <li><a href="/rabbi.html">Rabbi &amp; Rebbetzen</a></li>
+          <li><a href="/cheder.html">Cheder</a></li>
+          <li><a href="/hall-hire.html">Hall Hire</a></li>
+          <li><a href="/community.html">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Community</h3>
+        <ul>
+          <li><a href="https://myus.theus.org.uk/events" rel="noopener" target="_blank">Events</a></li>
+          <li><a href="https://bookmykiddush.co.uk" rel="noopener" target="_blank">Book a Kiddush</a></li>
+          <li><a href="https://readmyhaftorah.co.uk" rel="noopener" target="_blank">Read my Haftorah</a></li>
+          <li><a href="/community.html#bar-bat-mitzvah">Bar &amp; Bat Mitzvah</a></li>
+          <li><a href="/community.html#hatzola">Hatzola HBS</a></li>
+          <li><a href="https://theus.org.uk/donate/?project=My%20Community&amp;synagogue=130" rel="noopener" target="_blank">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Find us</h3>
+        <address>
+          <a href="https://www.google.com/maps/search/?api=1&query=8+Lancaster+Avenue+Hadley+Wood+Barnet+EN4+0EX" rel="noopener" target="_blank">8 Lancaster Avenue<br>Hadley Wood, Barnet<br>Hertfordshire EN4 0EX</a>
+        </address>
+        <ul style="margin-top:0.8rem">
+          <li><a href="tel:+442081432580">020 8143 2580</a></li>
+          <li><a href="mailto:office@hwjc.org.uk">office@hwjc.org.uk</a></li>
+          <li><a href="https://www.instagram.com/hadleywoodshul" rel="noopener" target="_blank">Instagram @hadleywoodshul</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Hadley Wood Jewish Community. A member of the <a href="https://www.theus.org.uk/" rel="noopener" target="_blank">United Synagogue</a>, registered charity no. 242552.</span>
+      <span><a href="https://www.theus.org.uk/sites/default/files/United%20Synagogue%20Complaints%20Policy_0.pdf" rel="noopener" target="_blank">Complaints policy</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js" defer></script>
+</body>
 </html>
