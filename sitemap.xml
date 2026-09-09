@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-DOMAIN/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://YOUR-DOMAIN/rabbi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://YOUR-DOMAIN/cheder.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://YOUR-DOMAIN/hall-hire.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://YOUR-DOMAIN/book-my-kiddush.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://YOUR-DOMAIN/community.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hwjc.uk/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://hwjc.uk/rabbi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hwjc.uk/cheder.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hwjc.uk/hall-hire.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hwjc.uk/book-my-kiddush.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hwjc.uk/community.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
