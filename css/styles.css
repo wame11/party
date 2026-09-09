@@ -1146,8 +1146,12 @@ a.card:hover h3 { color: var(--accent-strong); }
   .cal { padding: 0.8rem; }
   .cal__weekdays, .cal__grid { gap: 0.25rem; }
   .cal__day { border-radius: 9px; }
-  .chip { font-size: 0.5rem; padding: 0.05rem 0.3rem; }
+  /* Phones: chips become colour bars under the number; the legend explains them */
+  .cal__day .chip { font-size: 0; height: 6px; width: 70%; padding: 0; border-radius: 999px; }
+  .cal__day .chip--free { background: var(--accent); }
+  .cal__day .chip--booked { background: var(--secondary); }
   .chip--other { display: none; }
+  .cal__key .chip { font-size: 0.55rem; padding: 0.05rem 0.35rem; }
   .cal__num { font-size: 0.9rem; }
   .cal__head h3 { font-size: 1.05rem; }
   .cal__nav { padding: 0.35rem 0.7rem; }
