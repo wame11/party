@@ -1142,10 +1142,18 @@ a.card:hover h3 { color: var(--accent-strong); }
 .cal__loading { color: var(--muted); font-size: 0.95rem; margin: 0 0 0.75rem; }
 .cal__key { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0.9rem 0 0; font-size: 0.85rem; color: var(--muted); }
 .cal__key span { display: inline-flex; align-items: center; gap: 0.4rem; }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .cal { padding: 0.8rem; }
+  .cal__head { gap: 0.4rem; margin-bottom: 0.6rem; }
+  .cal__head h3 { font-size: 1.05rem; white-space: nowrap; text-align: center; }
+  .cal__nav { flex: none; white-space: nowrap; min-height: 2.3rem; padding: 0.3rem 0.75rem; font-size: 0.9rem; }
   .cal__weekdays, .cal__grid { gap: 0.25rem; }
+  .cal__weekdays div { font-size: 0.7rem; }
   .cal__day { border-radius: 9px; }
+  /* Phones: days that can't be booked are plain numbers, so only bookable Saturdays stand out */
+  .cal__day.is-off { background: transparent; border-color: transparent; }
+  .cal__day.is-off .cal__num { font-weight: 500; font-size: 0.9rem; color: var(--muted); }
+  .cal__day.is-other .cal__num { opacity: 0.55; }
   /* Phones: chips become colour bars under the number; the legend explains them */
   .cal__day .chip { font-size: 0; height: 6px; width: 70%; padding: 0; border-radius: 999px; }
   .cal__day .chip--free { background: var(--accent); }
