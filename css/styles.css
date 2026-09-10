@@ -1160,7 +1160,7 @@ a.card:hover h3 { color: var(--accent-strong); }
   .cal__weekdays div { font-size: 0.7rem; }
   .cal__day { border-radius: 9px; }
   /* Phones: days that can't be booked are plain numbers, so only bookable Saturdays stand out */
-  .cal__day.is-off { background: transparent; border-color: transparent; }
+  .cal__day.is-off, .cal__day.is-reserved { background: transparent; border-color: transparent; }
   .cal__day.is-off .cal__num { font-weight: 500; font-size: 0.9rem; color: var(--muted); }
   .cal__day.is-other .cal__num { opacity: 0.55; }
   .cal__key .chip { font-size: 0.55rem; padding: 0.05rem 0.35rem; }
@@ -1394,8 +1394,8 @@ a.card:hover h3 { color: var(--accent-strong); }
 /* Calendar gets a little more room than the form beside it */
 .split--cal { grid-template-columns: 1.15fr 0.85fr; }
 @media (max-width: 860px) { .split--cal { grid-template-columns: minmax(0, 1fr); } }
-.cal__day.is-reserved { background: var(--secondary-soft); border-color: transparent; cursor: pointer; }
-.cal__day.is-reserved:hover { border-color: var(--secondary); }
+.cal__day.is-reserved { background: var(--bg); border-color: transparent; cursor: pointer; }
+.cal__day.is-reserved:hover { border-color: var(--secondary); background: var(--secondary-soft); }
 .cal__name {
   display: block;
   max-width: 100%;

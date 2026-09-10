@@ -214,11 +214,7 @@
 
       let contentHtml = "";
       if (taken) {
-        const fullName = booking.name || "Reserved";
-        const shortName = fullName.length > 10 ? fullName.substring(0, 10) + "..." : fullName;
-        contentHtml =
-          '<span class="chip chip--booked">Reserved</span>' +
-          '<span class="cal__name" data-tooltip="' + esc(fullName) + '">' + esc(shortName) + '</span>';
+        contentHtml = '<span class="chip chip--booked">Reserved</span>';
       } else if (selectable && isFestival) {
         contentHtml = '<span class="chip chip--festival">Festival</span>';
       } else if (selectable) {
