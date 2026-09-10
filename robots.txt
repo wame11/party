@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hwjc.uk/sitemap.xml
+Sitemap: https://YOUR-DOMAIN/sitemap.xml
